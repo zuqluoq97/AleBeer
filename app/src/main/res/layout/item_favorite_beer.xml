@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_8">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBeer"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:scaleType="fitXY"
+        app:flow_lastHorizontalStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBeerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@id/bDelete"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/ivBeer"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Beer name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBeerPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="@id/tvBeerName"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/tvBeerName"
+        app:layout_constraintTop_toBottomOf="@id/tvBeerName"
+        tools:text="Beer name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNote"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeerPrice" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button"
+        app:layout_constraintEnd_toStartOf="@id/bUpdate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

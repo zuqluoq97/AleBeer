@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AleBeer</string>
+    <string name="save_button">SAVE</string>
+    <string name="saving_button">SAVING</string>
+    <string name="load_beers_failed">Fail to load list beer!</string>
+    <string name="load_favorite_beers_failed">Fail to load list favorite beer!</string>
+    <string name="update_beer_failed">Fail to update beer!</string>
+    <string name="delete_beer_failed">Fail to update beer!</string>
+    <string name="update_beer_success">Update beer success!</string>
+    <string name="retry_button">RETRY</string>
+    <string name="delete_button">DELETE</string>
+    <string name="update_button">UPDATE</string>
+</resources>
